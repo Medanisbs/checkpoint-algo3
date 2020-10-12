@@ -1,0 +1,23 @@
+ALGORITHM carte
+VAR
+T:array_of INTEGER
+n:INTEGER
+i,j,x:INTEGER
+BEGIN
+//lenght t 
+read(n)
+FOR i FROM 2 TO n-1   DO
+x=T[i]
+j=i
+    WHILE (T[j-1]>x||j>=1) DO
+       T[j] :=T[j-1]
+       j:=j-1
+    END_WHILE()
+   T[j]:=x
+END_FOR
+SWITCH (variable) DO
+    case value : set_instructions
+    case value : set_instructions
+    default : set_instructions
+END_SWITCH
+END
